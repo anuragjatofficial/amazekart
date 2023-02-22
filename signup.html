@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazekart sign up</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/128px-Amazon_icon.svg.png" type="image/icon type">
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./images/logo_black.png" alt="amazecart.in">
+        </div>
+    </header>
+    <main>
+        <div>
+            <form>
+                <div>Create Account </div>
+                <label for="name">Your name</label><br>
+                <input type="text" id="name" placeholder="First and last name" required><br>
+                <label for="phone" required>Mobile number</label><br>
+                <input type="number" id="number"placeholder="Mobile number" required><br>
+                <label for="email" >Email (optional)</label><br>
+                <input type="text" id="email"><br>
+                <label for="Password" required>Password</label><br>
+                <input type="password" required id="password" placeholder="At least 6 characters">
+                <button id="continue">continue</button>
+            </form>
+            <div>
+                <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
+                <a href=""><span>▶</span> &nbsp;Need help?</a>
+            </div>
+        </div>
+        <div id="button">
+            <div id="hrs">
+                <hr id="st-hr"> <span>Already have an account?</span><hr id="nd-hr">
+            </div>
+            <a href="./index.html"><button id="register">Sign in</button></a>
+        </div>
+    </main>
+    <footer>
+        <div id="second">
+            © 1996-2023, <a href="./index.html">Amazekart.com</a>, Inc. or its affiliates
+        </div>
+    </footer>
+    <script src="./signup.js"></script>
+</body>
+</html>
