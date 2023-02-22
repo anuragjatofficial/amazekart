@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+header div img{
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main>:nth-child(1){
+    width: 348px;
+    /* height: 279px; */
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    align-items: center;
+}
+main{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+main form{
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+main form div,main form label,main form input,main form button{
+    width: 100%;
+}
+main form div{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main form label{
+    font-weight: bold;
+    font-size: 14px;
+}
+main form input{
+    margin-top: 5px;
+    padding: 0px;
+    border: 2px solid #a6a6a6;
+    border-radius: 3px;
+    height: 30px;
+    
+}
+main form input:focus {
+    border: 2px solid #e77600;
+    outline: none;
+}
+main form button{
+    height: 32px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    background-color: #f5d78d;
+    cursor: pointer;
+}
+input[placeholder="First and last name"]{
+    padding-left: 7px;
+}
+input[placeholder="Mobile number"]{
+    padding-left: 7px;
+}
+input[placeholder="At least 6 characters"]{
+    padding-left: 7px;
+}
+main form button:hover{
+    background-color: #efbe42;
+}
+main>div>div{
+    width: 90%;
+    font-family:"Amazon Ember", Arial, sans-serif;
+    color: #111111;
+    font-size: 12px;
+    line-height: 20px;
+    margin: auto;
+}
+main >div>div>a{
+    color: #0066c0;
+}
+main>div>div span{
+    font-size: 10px;
+    color: #656565;
+}
+/* css for create your account */
+#hrs{
+    display: flex;
+    margin-top: 20px;
+    width: 348px;
+    height: 20px;
+    align-items: center;
+}
+#st-hr{
+    width: 28%;
+    border: 1px solid #e7e7e7;
+    height: 2px;
+}
+#nd-hr{
+    width: 28%;
+    height: 2px;
+    border: 1px solid #e7e7e7;
+    background-color: #e7e7e7;
+}
+main>div>div>span{
+    color: #767676;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#register{
+    display: flex;
+    width: 348px;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid #8d9096;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: auto;
+}
+#register>a{
+    font-family: "Amazon Ember", Arial, sans-serif;
+    color: #111111;
+    font-size: 12px;
+    font-weight: 525;
+}
+#register:hover{
+    background-color: #a6a6a6;
+}
+/*  */
+#second{
+    text-align: center;
+    color: #555555;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+#second >a{
+    text-decoration: none;
+    color: #555555;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}
+#second >a:hover{
+    text-decoration: underline;
+}
+footer{
+    font-size: 12px;
+    font-weight: 500;
+}
