@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>amazecart</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/128px-Amazon_icon.svg.png" type="image/icon type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./home.css">
 </head>
@@ -24,12 +25,13 @@
             <form>
                 <select id="category">
                     <option value="">All</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="men's clothing">men's clothing</option>
+                    <option value="jewelery">jewelery</option>
+                    <option value="electronics">electronics</option>
+                    <option value="women's clothing">women's clothing</option>
+                    <option value="mobiles">mobiles</option>
+                    <!-- <option value=""></option>
+                    <option value=""></option> -->
                 </select>
                 <input type="text" placeholder="Search Amazekart.in" id="search">
                 <input type="submit" value="🔍︎" id="schbtn">
@@ -57,10 +59,95 @@
 </header>
 
 <main>
-    <div id="slider">
-        <i class="fa-solid fa-chevron-left"></i>
-        <img src="https://m.media-amazon.com/images/I/51OsKvCaHVL._SX1500_.jpg" alt="holi image">
-        <i class="fa-solid fa-chevron-right"></i>
+    <div id="wrap">
+        <div id="slider">
+            <button id="left"><i class="fa-solid fa-chevron-left"></i></button>
+            <img src="https://m.media-amazon.com/images/I/51OsKvCaHVL._SX1500_.jpg" alt="" id="sliderImg">
+            <button id="right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="prod">
+            <div>
+                <h2>Starting ₹87 | Amazon Brands & more</h2>
+                <div class="four_prod">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile2-kitchen_186x116_in-en._SY116_CB612501062_.jpg" alt="">
+                        <p>Starting ₹149 | Choppers & more</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile3-home_186x116_in-en._SY116_CB612501076_.jpg" alt="">
+                        <p>
+                            Starting ₹87 | String lights  & more</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile1-kitchen_186x116_in-en._SY116_CB612501057_.jpg" alt="">
+                        <p>Starting ₹239 | Kitchen storage & containers</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/baugwsept/xcm_banners_tile4-home_186x116_in-en._SY116_CB612501080_.jpg" alt="">
+                        <p>
+                            Starting ₹189 | Wall stickers & more</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Home appliances | Up to 50% off</h2>
+                <div class="four_prod">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" alt="">
+                        <p>Air conditioners</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" alt="">
+                        <p>Refrigirators</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" alt="">
+                        <p>Microwaves</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" alt="">
+                        <p>Washing machines</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Shop & Pay | Earn rewards daily</h2>
+                <div class="four_prod">
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Rewards/GWBTFPercolateCards/PC_Quard_Card_186X116_ScratchCard._SY116_CB627364845_.jpg" alt="">
+                        <p>Claim your scratch card</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Rewards/GWBTFPercolateCards/PC_Quard_Card_186X116_CollectedOffers._SY116_CB627364845_.jpg" alt="">
+                        <p>Redeem your collected rewards</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/APay/GWQC/PC_Pay__Win0.5x._SY116_CB616103432_.jpg" alt="">
+                        <p>Play & win scrach cards</p>
+                    </div>
+                    <div>
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/APay/GWQC/PC_Shop__collect0.5x._SY116_CB616103432_.jpg" alt="Shop & Pay">
+                        <p>Shop & Collect Rewards daily</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Up to 70% off | Clearance store</h2>
+                <div class="one_prod">
+                   <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg" alt="Up to 70% off | Electronics clearance store">
+                   <a href="">see more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="products">
+        <div>
+            <!-- sort& filter -->
+        </div>
+        <div id="only_prod">
+            <!-- all new divs will go here -->
+        </div>
     </div>
 </main>
 <footer>
@@ -138,5 +225,5 @@
     </div>
 </footer>
 </body>
-<!-- <script src="./home.js"></script> -->
+<script src="./home.js"></script>
 </html>
