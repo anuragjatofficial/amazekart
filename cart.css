@@ -1,0 +1,264 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Amazon Ember', sans-serif;
+}
+#nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    background-color: #292929;
+    /* justify-content: space; */
+}
+#nav>div{
+    display: flex;
+    /*  */
+}
+#nav>div>img{
+    height: 3vh;
+    margin-left: 1vw;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#location>span{
+    display: flex;
+    font-weight: bold;
+    font-size: 1.5vh;
+    margin-right: auto;
+    width: 100%;
+}
+#loc{
+    font-family: 'Amazon Ember', sans-serif;
+}
+#loc{
+    display: flex;
+}
+#loc>img{
+    display: flex;
+    margin-top: auto;
+    height: 2vh;
+    margin-top: auto;
+    margin-bottom: 0.5vh;
+    margin-right: 0.3vw;
+    
+}
+#location{
+    width: 9vw;
+    border: 2px solid rebeccapurple;
+}
+#location>div{
+    font-size: 1.2vh;
+}
+/* #searchobox{
+    align-items: center;
+    width: 50%;
+    height: 30px;
+    
+*/
+form{
+    width: 60%;
+    display: flex;
+    border: none;
+    justify-content: center;
+    height: 4.5vh;
+    margin-left: 1vw;
+    margin-right: 20px;
+    /* border: 2px solid rebeccapurple; */
+}
+#search{
+    width: 90%;
+    padding-left: 1%;
+    /* border: none; */
+}
+#hello{
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    margin-left: auto;
+}
+#hello>a{
+    color: white;
+    font-family: 'Amazon Ember', Arial , sans-serif;
+}
+#hello>a>span{
+    display: flex;
+    font-weight: bold;
+    margin-right: 1vw;
+    font-size: 1.5vh;
+}
+form>select{
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Amazon Ember', sans-serif;
+    text-align: center;
+}
+#schbtn{
+    border-top-right-radius: 5px;
+    border: none;
+    width: 50px;
+    background-color: #f3a847;
+    font-size: 25px;
+    border-bottom-right-radius: 5px;
+}
+
+/* main css here */
+#only_prod{
+    display: grid;
+    width: 80%;
+    background-color: white;
+    grid-template-columns: repeat(4,1fr);
+    margin: 60px auto 60px auto;
+    /* justify-content: space-between; */
+}
+#only_prod>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 0.5px solid #d5dbdb;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    align-items:center;
+    justify-content:space-between;
+    /* text-align: center; */
+}
+#only_prod>div>div>img{
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: auto;
+    object-fit: fill;
+}
+#only_prod>div>:nth-child(1){
+    width: 60%;
+    display: flex;
+    height: 450px;
+    align-items: center;
+}
+#only_prod>div>:nth-child(2){
+    margin-top: auto;
+    margin-bottom: 20px;
+    /* margin-bottom: auto; */
+}
+#only_prod>div>div>button{
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    width: 200px;
+    background-color: #f3a847;
+}
+#only_prod>div>div>button:hover{
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f3a847;
+    border: 2px solid #f3a847;
+    border-radius: 2px;
+    width: 205px;
+    background-color: white;
+}
+#only_prod>div>div>h3, #only_prod>div>div>h2, #only_prod>div>div>p,#only_prod>div>div>button{
+    margin-left: 20px;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.textdiv{
+    width: 100%;
+    /* display: flex; */
+    align-self: flex-end;
+    /* flex-direction: column; */
+    margin-bottom: auto;
+    /* height: 100%; */
+    align-items: end;
+}
+.textdiv>p{
+    font-size: 0.9em;
+    font-weight: 100;
+}
+.textdiv>h2{
+    font-size: 1.2em;
+}
+.textdiv>h3{
+    font-size: 1em;
+}
+#greenrate{
+    margin-left: 20px;
+}
+.smallbtn{
+    padding: 1px 5px 1px 5px;
+    background-color: #388e3cff;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+/* footer css here */
+
+#first{
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    background-color: #232f3e;
+}
+#first>div{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+#first>div>div{
+    margin-right: 80px;
+}
+#first>div>div>div{
+    color: white;
+    font-size: 18px;
+    /* font-weight: bold; */
+    margin-bottom: 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#first li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+#first li a{
+    color: #d0d1d2;
+    font-size: 15px;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}
+#first li a:hover{
+    color: white;
+    font-size: 15px;
+    text-decoration: underline;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}
+#second{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #292929;
+}
+#second >a{
+    color: white;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+}

@@ -1,12 +1,18 @@
-@import url('https://fonts.cdnfonts.com/css/amazon-ember');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Amazon Ember', sans-serif;
-}
-#nav{
+
+        @import url('https://fonts.cdnfonts.com/css/amazon-ember');
+        *{
+            margin:0;
+            padding: 0%;
+            font-family: 'Amazon Ember', sans-serif;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #e3e6e6;
+        }
+
+        /* header here */
+        #nav{
     width: 100vw;
     display: flex;
     align-items: center;
@@ -51,7 +57,7 @@
 }
 #location{
     width: 9vw;
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
 }
 #location>div{
     font-size: 1.2vh;
@@ -108,11 +114,13 @@ form>select{
     font-size: 25px;
     border-bottom-right-radius: 5px;
 }
-/* css for main here */
-main{
-    min-height: calc( 100vh  + 37px - 266px);
-}
-#slider{
+
+        /* main here */
+
+        main{
+              min-height: calc( 200vh  + 37px - 266px);
+        }
+        #slider{
     display: flex;
     margin: auto;
     /* justify-content: space-between; */
@@ -170,15 +178,30 @@ main{
     justify-content: center;
 }
 .prod{
-    width: 80%;
-    display: flex;
-    /* gap: 20px */
+    width: 78%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2%;
+    row-gap: 5%;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
     position: absolute;
     justify-content: space-evenly;
     top: 40%;
-    grid-template-columns: (4,1fr);
+    /* grid-template-rows: (1,1fr); */
 }
-.prod>div{
+.prod>a>div{
+    /* width: 23%; */
+    color: black;
+    background-color: white;
+}
+#one_p{
+    background-color: white;
+}
+#one_p>h2{
+    padding: 20px;
+}
+.crod>div{
     width: 23%;
     background-color: white;
 }
@@ -188,7 +211,11 @@ main{
     justify-content: space-evenly;
     /* gap: 10px; */
 }
-.prod>div>h2{
+.prod>a>div>h2{
+    font-size: 1.5em;
+    padding: 20px;
+}
+.crod>div>h2{
     font-size: 1.5em;
     margin: 20px;
 }
@@ -210,23 +237,7 @@ main{
     margin-left: 20px;
     font-size: 1em;
 }
-/*
-.stack-top{
-    z-index: 9;
-    margin: 20px; 
-}
-#slider>img{
-    width: 100%;
-    position: absolute;
-} */
-
-main{
-    /* height: 200px; */
-    background-color: #e3e6e6;
-}
-
-/* css for footer here */
-
+/* footer */
 #first{
     display: flex;
     width: 100%;
@@ -276,126 +287,42 @@ main{
     color: white;
     font-family: 'Amazon Ember', Arial, sans-serif;
 }
-
-/* test purpose  */
-#only_prod{
-    display: grid;
-    width: 80%;
-    background-color: white;
-    grid-template-columns: repeat(4,1fr);
-    margin: 60px auto 60px auto;
-    /* justify-content: space-between; */
-}
-#only_prod>div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 0.5px solid #d5dbdb;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    align-items:center;
-    justify-content:space-between;
-    /* text-align: center; */
-}
-#only_prod>div>div>img{
-    width: 100%;
-    display: flex;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin: auto;
-    object-fit: fill;
-}
-#only_prod>div>:nth-child(1){
-    width: 60%;
-    display: flex;
-    height: 450px;
-    align-items: center;
-}
-#only_prod>div>:nth-child(2){
-    margin-top: auto;
-    margin-bottom: 20px;
-    /* margin-bottom: auto; */
-}
-#only_prod>div>div>button{
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    width: 200px;
-    background-color: #f3a847;
-}
-#only_prod>div>div>button:hover{
-    height: 45px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: bold;
-    color: #f3a847;
-    border: 2px solid #f3a847;
-    border-radius: 2px;
-    width: 205px;
-    background-color: white;
-}
-#only_prod>div>div>h3, #only_prod>div>div>h2, #only_prod>div>div>p,#only_prod>div>div>button{
-    margin-left: 20px;
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    margin-right: 20px;
-    margin-top: 10px;
-}
-.textdiv{
-    width: 100%;
-    /* display: flex; */
-    align-self: flex-end;
-    /* flex-direction: column; */
-    margin-bottom: auto;
-    /* height: 100%; */
-    align-items: end;
-}
-.textdiv>p{
-    font-size: 0.9em;
-    font-weight: 100;
-}
-.textdiv>h2{
-    font-size: 1.2em;
-}
-.textdiv>h3{
-    font-size: 1em;
-}
-#greenrate{
-    margin-left: 20px;
-}
-.smallbtn{
-    padding: 1px 5px 1px 5px;
-    background-color: #388e3cff;
-    border: none;
-    color: white;
-    border-radius: 3px;
-}
-
-/* media queries here */
 @media only screen and (max-width: 1350px) and (min-width:900px){
-
     .prod{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2%;
+        row-gap: 5%;
+    }
+    main{
+        min-height: calc( 250vh  + 37px - 266px);
         
+    }
+    
+}
+@media only screen and (max-width: 899px) and (min-width:500px){
+    .prod{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2%;
+        row-gap: 3%;
+    }
+    main{
+              min-height: calc( 350vh  + 37px - 266px);
+        
+        }
+}
+@media only screen and (max-width: 499px) {
+    .prod{
+        display: grid;
         /* position: relative; */
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 2%;
+        row-gap: 1%;
     }
-    .prod>div{
-        width: auto;
-        gap: 20px
-    }
-    #only_prod{
-        position: relative;
-        margin-top: 200vw;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-  }
+    main{
+              min-height: calc( 650vh  + 37px - 266px);
+        
+        }
+    
+}

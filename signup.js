@@ -21,6 +21,7 @@ cxdetails.addEventListener("submit",(event)=>{
     else{
         alert("Account created succesfully")
         localStorage.setItem("cxdet",JSON.stringify(cx));
+        window.location.replace("./index.html");
     }
 });
 
