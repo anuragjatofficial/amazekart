@@ -1,21 +1,30 @@
 *{
     margin: 0px;
     padding: 0px;
-    text-decoration: none;
-    box-sizing: border-box;
+    font-family: 'Amazon Ember', Arial, sans-serif;
 }
-header div{
+/* header css */
+#nav{
     display: flex;
-    text-align: center;
-    justify-content: center;
-}
-header div img{
-    height: 40px;
-    margin-top: 20px;
+    padding: 10px;
     margin-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+    background-color: #fafafa;
+    justify-content: space-around;
 }
+#nav>:nth-child(3)>img{
+    height: 30px;
+}
+#nav>:nth-child(1) img{
+    height: 30px;
+}
+#nav>div>checkout{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+/* main css */
 main>:nth-child(1){
-    width: 348px;
+    width: 648px;
     /* height: 279px; */
     margin: auto;
     border-radius: 5px;
@@ -23,8 +32,11 @@ main>:nth-child(1){
     align-items: center;
 }
 main{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
     padding-bottom: 30px;
+    gap: 20%;
+    justify-content: space-around;
     margin-bottom: 20px;
 }
 main form{
@@ -44,15 +56,17 @@ main form label{
     font-weight: bold;
     font-size: 14px;
 }
-main form input{
+main form input , main form select{
+    width: 90%;
     margin-top: 5px;
-    padding: 0px;
+    padding-left: 7px;
+    outline: none;
     border: 2px solid #a6a6a6;
     border-radius: 3px;
     height: 30px;
     
 }
-main form input:focus {
+main form input:focus,main form select:focus {
     border-color: #e77600;
     outline: none;
     box-shadow: 0 0 8px 0 #e77600;
@@ -66,7 +80,7 @@ main form button{
     background-color: #f5d78d;
     cursor: pointer;
 }
-input[placeholder="First and last name"]{
+/* input[placeholder="First and last name"]{
     padding-left: 7px;
 }
 input[placeholder="Mobile number"]{
@@ -74,10 +88,7 @@ input[placeholder="Mobile number"]{
 }
 input[placeholder="At least 6 characters"]{
     padding-left: 7px;
-}
-input[type="email"]{
-    padding-left: 7px;
-}
+} */
 main form button:hover{
     background-color: #efbe42;
 }
@@ -96,7 +107,7 @@ main>div>div span{
     font-size: 10px;
     color: #656565;
 }
-/* css for create your account */
+
 #hrs{
     display: flex;
     margin-top: 20px;
@@ -144,23 +155,57 @@ main>div>div>span{
 #register:hover{
     background-color: #a6a6a6;
 }
-/*  */
-#second{
-    text-align: center;
-    color: #555555;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: white;
+#continue{
+    background-color: #ffd814;
+    border: none;
+    border-radius: 5px;
+    font-size: 70%;
+    width: 20%;
 }
-#second >a{
-    text-decoration: none;
-    color: #555555;
+#button{
     font-family: 'Amazon Ember', Arial, sans-serif;
+    border-radius: 5px;
+    margin-right: auto;
+    padding-left: 20px;
+    height: max-content;
+    padding-right: 20px;
+    padding: 20px;
+    border: 1px solid #dddddd;
 }
-#second >a:hover{
-    text-decoration: underline;
+#button>h3{
+    font-size: 1rem;
 }
-footer{
-    font-size: 12px;
-    font-weight: 500;
+#button td{
+    font-size: 0.7rem;
+}
+#price>td{
+    font-size: 0.8rem;
+    color: #b12704;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 800px) {
+    main{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #button{
+        margin: auto;
+    }
+    main>:nth-child(1){
+        width: 100%;
+        margin-top: 30px;
+    }
+    #continue{
+        font-size: 7px;
+    }
+    #nav{
+        /* text-align: center; */
+        font-size: 10px;
+    }
+    #nav img{
+        height: 10px;
+    }
 }

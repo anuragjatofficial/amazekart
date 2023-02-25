@@ -110,7 +110,7 @@ form>select{
     border-top-right-radius: 5px;
     border: none;
     width: 50px;
-    background-color: #f3a847;
+    background-color: #f7ca00;
     font-size: 25px;
     border-bottom-right-radius: 5px;
 }
@@ -311,6 +311,43 @@ form>select{
               min-height: calc( 350vh  + 37px - 266px);
         
         }
+        #nav{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #nav>:nth-child(1){
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #location{
+            width: 50vw;
+            /* margin-left: auto; */
+            margin: 0px;
+            font-size: 2px;
+        }
+        #loc{
+            margin-left: 20px;
+        }
+        #hello{
+            width: 90%;
+            display: flex;
+            justify-content:space-around;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        form{
+            width: 90%;
+        }
+        #hello>a{
+            /* margin-right: 20px; */
+            font-size: 10px;
+        }
+        #hello>a>span{
+            font-size: 12px;
+        }
 }
 @media only screen and (max-width: 499px) {
     .prod{
@@ -324,5 +361,47 @@ form>select{
               min-height: calc( 650vh  + 37px - 266px);
         
         }
+        #nav{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #nav>:nth-child(1){
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #location{
+            width: 50vw;
+            /* margin-left: auto; */
+            margin: 0px;
+            font-size: 2px;
+        }
+        #loc{
+            margin-left: 20px;
+        }
+        #hello{
+            width: 90%;
+            display: flex;
+            justify-content:space-around;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        form{
+            width: 90%;
+        }
+        #hello>a{
+            /* margin-right: 20px; */
+            font-size: 10px;
+        }
+        #hello>a>span{
+            font-size: 12px;
+        }
     
 }
+
+
+
+
+
