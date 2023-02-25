@@ -69,7 +69,13 @@ function products(data){
 
         // functionality part of add button
 
+        if(cartdata = []){
+            counter = 0;
+            localStorage.setItem("counter",JSON.stringify(counter));
+        }
+
         addbtn.addEventListener("click",()=>{
+            
             if(checkdup(data[i])){
                 addbtn.innerText = " Already in 🛒CART ";
                 alert("product already in cart");

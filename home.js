@@ -9,8 +9,10 @@ let sliderarr = [
     "https://m.media-amazon.com/images/I/61gPOiG6YiL._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/71LbHsact9L._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/81cP1IAxf-L._SX3000_.jpg",
-    "https://m.media-amazon.com/images/I/619rl+QqjwL._SX3000_.jpg" ,
-    "https://m.media-amazon.com/images/I/61l4i7aoY2L._SX3000_.jpg"
+    "https://m.media-amazon.com/images/I/619rl+QqjwL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/61l4i7aoY2L._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/8160RuRhSUL._SX3000_.jpg",
+    "https://m.media-amazon.com/images/I/81aKds7BOeL._SX3000_.jpg"
     ];
     let sliderImg = document.getElementById("sliderImg");
     let left = document.getElementById("left");

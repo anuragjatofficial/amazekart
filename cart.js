@@ -4,9 +4,16 @@ let product = document.getElementById("products");
 // function for products
 let only_prod = document.getElementById("only_prod");
 products(cartarray);
-
+// if(cartarray==[]){
+//     product.innerHTML = `<div id="null">
+//     <h2>Your Amazekart is empty</h2>
+//     <a href="./products.html"><button>Go back to products page</button></a>
+//     <img src="https://m.media-amazon.com/images/G/31/cart/empty/kettle-desaturated._CB424694257_.svg" alt="Cart is empty">
+// </div>`;
+// }
 function products(data){
-    if(data === null){
+    console.log(data);
+    if(data === null || data.length === 0){
         product.innerHTML = `<div id="null">
         <h2>Your Amazekart is empty</h2>
         <a href="./products.html"><button>Go back to products page</button></a>
@@ -24,15 +31,19 @@ function products(data){
         let price = document.createElement("h3");
         let rating = document.createElement("button");
         let addbtn = document.createElement("button");
+        let removebtn = document.createElement("button");
+
         let ratecount = document.createElement("span");
         let span = document.createElement("span");
         let imgdiv = document.createElement("div");
         let textdiv = document.createElement("div");
+        let btndiv = document.createElement("div");
         
 
         // some attributes & id's
         span.setAttribute("id","greenrate")
         ratecount.setAttribute("id","rate");
+        removebtn.setAttribute("id","delete");
         rating.setAttribute("class","smallbtn")
         image.setAttribute("src",data[i].image);
         textdiv.setAttribute("class","textdiv")
@@ -47,30 +58,25 @@ function products(data){
         ratecount.innerHTML = `(${data[i].rating.count})`;
         only_prod.append(product);
         addbtn.innerText = " ⚡ Buy Now";
+        removebtn.innerText = "Remove from cart";
 
         // functionality part of add button
 
-        addbtn.addEventListener("click",()=>{
-            if(checkdup(data[i])){
-                addbtn.innerText = " Already in 🛒CART ";
-                alert("product already in cart");
-            }
-            else{
-                cartarray.push(data[i]);
-                localStorage.setItem("cartdata",JSON.stringify(cartarray));
-                addbtn.innerText = " Already in 🛒CART ";
-                alert("Product Added to cart");
-                counter++;
-                localStorage.setItem("counter",JSON.stringify(counter));
-            }
+        removebtn.addEventListener("click",()=>{
             // product.innerHTML = null;
-            if(counter!==0){
-                count.innerText = counter;
-            }
+            cartarray = cartarray.filter((ele)=>{
+                return ele.id !== data[i].id;
+            });
+            localStorage.setItem("cartdata",JSON.stringify(cartarray));
+            products(cartarray);
         });
-        
-        textdiv.append(title,description,category,price,span,addbtn)
+        addbtn.addEventListener("click",()=>{
+            localStorage.setItem("buy",JSON.stringify(data[i]));
+            window.location.replace("./checkout.html")
+        });
+        textdiv.append(title,description,category,price,span,btndiv)
         imgdiv.append(image);
+        btndiv.append(addbtn,removebtn)
         span.append(rating,ratecount);
         product.append(imgdiv,textdiv);
     }
