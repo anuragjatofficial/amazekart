@@ -21,13 +21,13 @@
             <h2>Add products</h2>
             <form id="myform">
                 <label for="prod_name">Name of product</label><br>
-                <input type="text" id="name"><br>
+                <input type="text" required id="name"><br>
                 <label for="price">Price(in INR)</label><br>
-                <input type="number" id="price"><br>
+                <input type="number" required id="price"><br>
                 <label for="description" >Description about product</label><br>
-                <input type="text" id="description"> <br>
+                <input type="text" required id="description"> <br>
                 <label for="category" >Category</label><br>
-                <select id="category" id="category">
+                <select id="category" required id="category">
 
                     <option value="men's clothing">men's clothing</option>
                     <option value="jewelery">jewelery</option>
@@ -40,13 +40,13 @@
                 </select><br>
 
                 <label for="image" >image</label><br>
-                <input type="url" id="image"><br>
+                <input type="url" required id="image"><br>
                 <label for="rating" >Ratings(Based on reviws)</label><br>
-                <input type="number" id="rate" step="any"><br>
+                <input type="number" required id="rate" step="any"><br>
                 <label for="count" >rating counts</label><br>
-                <input type="number" id="count"><br>
+                <input type="number" required id="count"><br>
                 <label for="id">product id<span></span></label><br>
-                <input type="number" id="ids"><br>
+                <input type="number" required id="ids"><br>
                 <button id="done">submit</button>
             </form>
         </div>
