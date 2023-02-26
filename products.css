@@ -321,6 +321,7 @@ main{
     #first>div{
         display: flex;
         flex-direction: column;
+        padding-right: 10px;
     }
 }
 @media only screen and (max-width: 499px) {
@@ -366,11 +367,8 @@ main{
         font-size: 12px;
     }
     #first>div{
-        width: 100%;
-        font-size: 0.5em;
-    }
-    #first>div{
         display: flex;
         flex-direction: column;
+        padding-right: 10px;
     }
 }

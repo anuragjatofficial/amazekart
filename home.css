@@ -353,6 +353,7 @@ form>select{
         #first>div{
             display: flex;
             flex-direction: column;
+            padding-right: 10px;
         }
 
 }
@@ -408,6 +409,7 @@ form>select{
         #first>div{
             display: flex;
             flex-direction: column;
+            padding-right: 10px;
         }
     
 }
