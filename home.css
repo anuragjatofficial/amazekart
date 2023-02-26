@@ -240,7 +240,7 @@ form>select{
 /* footer */
 #first{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     padding-top: 30px;
     padding-bottom: 30px;
     justify-content: center;
@@ -248,7 +248,7 @@ form>select{
 }
 #first>div{
     display: flex;
-    width: 60%;
+    width: 60vw;
     justify-content: center;
 }
 #first>div>div{
@@ -256,7 +256,7 @@ form>select{
 }
 #first>div>div>div{
     color: white;
-    font-size: 18px;
+    font-size: 1.5em;
     /* font-weight: bold; */
     margin-bottom: 12px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -348,6 +348,13 @@ form>select{
         #hello>a>span{
             font-size: 12px;
         }
+
+        /* footer css here */
+        #first>div{
+            display: flex;
+            flex-direction: column;
+        }
+
 }
 @media only screen and (max-width: 499px) {
     .prod{
@@ -397,6 +404,10 @@ form>select{
         }
         #hello>a>span{
             font-size: 12px;
+        }
+        #first>div{
+            display: flex;
+            flex-direction: column;
         }
     
 }

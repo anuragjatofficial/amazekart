@@ -14,10 +14,14 @@ let sliderarr = [
     "https://m.media-amazon.com/images/I/8160RuRhSUL._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/81aKds7BOeL._SX3000_.jpg"
     ];
+
+    let name = localStorage.getItem("name");
     let sliderImg = document.getElementById("sliderImg");
     let left = document.getElementById("left");
     let right = document.getElementById("right")
     let line = 0;
+    let appname = document.getElementById("hell");
+    appname.innerText = name;
     left.addEventListener("click",()=>{
             sliderImg.setAttribute("src",sliderarr[line]);
             console.log(sliderarr[line]);

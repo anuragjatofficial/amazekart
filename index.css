@@ -176,3 +176,17 @@ footer{
     font-size: 12px;
     font-weight: 500;
 }
+@media only screen and (max-width: 381px) {
+    main>:nth-child(2){
+        width: 200px;
+    }
+    #register{
+        width: 200px;
+    }
+    #hrs{
+        width: 200px;
+    }
+    main>div>div>span{
+        font-size: 7px;
+    }
+}

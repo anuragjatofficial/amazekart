@@ -44,7 +44,7 @@ main form{
     width: 90%;
     margin: auto;
 }
-main form div,main form label,main form input,main form button{
+main form label,.yes{
     width: 100%;
 }
 main form div{
@@ -56,7 +56,7 @@ main form label{
     font-weight: bold;
     font-size: 14px;
 }
-main form input , main form select{
+.yes, main form select{
     width: 90%;
     margin-top: 5px;
     padding-left: 7px;
@@ -66,19 +66,13 @@ main form input , main form select{
     height: 30px;
     
 }
-main form input:focus,main form select:focus {
+.yes:focus,main form select:focus {
     border-color: #e77600;
     outline: none;
     box-shadow: 0 0 8px 0 #e77600;
 }
-main form button{
-    height: 32px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #a88734;
-    border-radius: 3px;
-    background-color: #f5d78d;
-    cursor: pointer;
+#textchange{
+    margin: 20px;
 }
 /* input[placeholder="First and last name"]{
     padding-left: 7px;
@@ -92,6 +86,20 @@ input[placeholder="At least 6 characters"]{
 main form button:hover{
     background-color: #efbe42;
 }
+
+#html:hover,#css:hover,#javascript:hover{
+    border-radius: 3px;
+    background-color: #fcf5ee;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+/* #first_1,#second_2,#third_3{
+    width: 0%;
+    background-color: blueviolet;
+    color: rebeccapurple;
+    all: none;
+} */
 main>div>div{
     width: 90%;
     font-family:"Amazon Ember", Arial, sans-serif;
@@ -156,11 +164,17 @@ main>div>div>span{
     background-color: #a6a6a6;
 }
 #continue{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #a88734;
+    border-radius: 3px;
     background-color: #ffd814;
     border: none;
+    cursor: pointer;
     border-radius: 5px;
-    font-size: 70%;
-    width: 20%;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
 }
 #button{
     font-family: 'Amazon Ember', Arial, sans-serif;
@@ -183,7 +197,45 @@ main>div>div>span{
     color: #b12704;
     font-weight: 700;
 }
+#confirmation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#confirmation>img{
+    width: 500px;
+    /* margin-bottom: 20px; */
+}
+#confirmation>h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+}
+#confirmation>p{
+    color: #a0a0a0;
+    margin-bottom: 10px;
+}
+#confirmation>a>button{
+    background-color: #32c670;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin-top: 10px;
+    /* height: 35px; */
+    /* padding-left: 20px; */
+    padding: 20px 30px 20px 30px;
 
+    font-weight: 500px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#confirmation>a>button:hover{
+    box-shadow: 0 0 8px 0 #32c670;
+    background-color: transparent;
+    border: 2px solid #32c670;;
+    color: #32c670;
+}
 @media only screen and (max-width: 800px) {
     main{
         display: flex;
@@ -199,7 +251,7 @@ main>div>div>span{
         margin-top: 30px;
     }
     #continue{
-        font-size: 7px;
+        /* font-size: 7px; */
     }
     #nav{
         /* text-align: center; */
@@ -207,5 +259,9 @@ main>div>div>span{
     }
     #nav img{
         height: 10px;
+    }
+    #confirmation{
+        width: 60%;
+        margin: auto;
     }
 }
