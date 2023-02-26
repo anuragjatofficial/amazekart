@@ -51,7 +51,7 @@
 }
 #location{
     width: 9vw;
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
 }
 #location>div{
     font-size: 1.2vh;
@@ -110,6 +110,9 @@ form>select{
 }
 
 /* main css here */
+main{
+    min-height: calc( 100vh  + 37px - 266px);
+}
 body{
     background-color: #e3e6e6;
 }
@@ -286,3 +289,120 @@ body{
     color: white;
     font-family: 'Amazon Ember', Arial, sans-serif;
 }
+/* media queries */
+@media only screen and (max-width: 1350px) and (min-width:900px){
+    #only_prod{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+      
+}
+
+@media only screen and (max-width: 899px) and (min-width:500px){
+        #nav{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #nav>:nth-child(1){
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #location{
+            width: 50vw;
+            /* margin-left: auto; */
+            margin: 0px;
+            font-size: 2px;
+        }
+        #loc{
+            margin-left: 20px;
+        }
+        #hello{
+            width: 90%;
+            display: flex;
+            justify-content:space-around;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        form{
+            width: 90%;
+        }
+        #hello>a{
+            /* margin-right: 20px; */
+            font-size: 10px;
+        }
+        #hello>a>span{
+            font-size: 12px;
+        }
+
+
+
+        /* below nav */
+
+        #only_prod{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        #first>div{
+            display: flex;
+            flex-direction: column;
+        }
+}
+
+@media only screen and (max-width: 499px) {
+        #nav{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #nav>:nth-child(1){
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #location{
+            width: 50vw;
+            /* margin-left: auto; */
+            margin: 0px;
+            font-size: 2px;
+        }
+        #loc{
+            margin-left: 20px;
+        }
+        #hello{
+            width: 90%;
+            display: flex;
+            justify-content:space-around;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        form{
+            width: 90%;
+        }
+        #hello>a{
+            /* margin-right: 20px; */
+            font-size: 10px;
+        }
+        #hello>a>span{
+            font-size: 12px;
+        }
+
+        /* below nav */
+
+        #only_prod{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        #first>div{
+            display: flex;
+            flex-direction: column;
+        }
+}
+

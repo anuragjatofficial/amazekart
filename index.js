@@ -1,5 +1,5 @@
 let cxdata = JSON.parse(localStorage.getItem("cxdet"));
-
+let hello;
 let myform = document.querySelector("form");
 let details = [];
 let wrong = document.getElementById("wrong");
@@ -29,7 +29,14 @@ myform.addEventListener("submit",(event)=>{
                     </div>`;
         }
         for(let i = 0;i<cxdata.length;i++){
-            if((details[0]===cxdata[i].cxemail || details[i]==cxdata[i].cxnumber) && details[details.length-1]===cxdata[i].cxpassword){
+            // console.log(details[0]=="admin@amazecart.in");
+            if (details[0]=="admin@amazecart.in" && details[details.length-1]=="Noida@123"){
+                window.location.replace("./admin.html");
+                break;
+            }
+            else if((details[0]===cxdata[i].cxemail || details[i]==cxdata[i].cxnumber) && details[details.length-1]===cxdata[i].cxpassword){
+                hello = cxdata[i].cxname;
+                localStorage.setItem("name",hello);
                 alert("succesfully logeed in");
                 window.location.replace("./home.html");
             }

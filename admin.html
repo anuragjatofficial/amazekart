@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to admin page</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/128px-Amazon_icon.svg.png" type="image/icon type">
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <a href="./products.html"><div> <img src="./images/logo_black.png" alt=""> </div></a>
+            <div><h2>Hello Admin!</h2></div>
+            <div><img src="./images/bag.png" alt=""></div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>Add products</h2>
+            <form id="myform">
+                <label for="prod_name">Name of product</label><br>
+                <input type="text" id="name"><br>
+                <label for="price">Price(in INR)</label><br>
+                <input type="number" id="price"><br>
+                <label for="description" >Description about product</label><br>
+                <input type="text" id="description"> <br>
+                <label for="category" >Category</label><br>
+                <select id="category" id="category">
+
+                    <option value="men's clothing">men's clothing</option>
+                    <option value="jewelery">jewelery</option>
+                    <option value="electronics">electronics</option>
+                    <option value="women's clothing">women's clothing</option>
+                    <option value="mobiles">mobiles</option>
+                    <!-- <option value=""></option>
+                        <option value=""></option> -->
+                    
+                </select><br>
+
+                <label for="image" >image</label><br>
+                <input type="url" id="image"><br>
+                <label for="rating" >Ratings(Based on reviws)</label><br>
+                <input type="number" id="rate" step="any"><br>
+                <label for="count" >rating counts</label><br>
+                <input type="number" id="count"><br>
+                <label for="id">product id<span></span></label><br>
+                <input type="number" id="ids"><br>
+                <button id="done">submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="./admin.js"></script>
+</html>

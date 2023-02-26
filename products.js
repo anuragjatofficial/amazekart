@@ -1,14 +1,24 @@
 let mydata = [];
 let filter = document.getElementById("category");
+let prot = JSON.parse(localStorage.getItem("products"));
+console.log(prot);
 // fetching data 
-
 fetch("https://63f4b6953f99f5855db5af35.mockapi.io/produ")
 .then((res)=>{
     return res.json();
 })
 .then((data=>{
-    mydata = data; 
-    products(data); //calling data
+    if (prot === null){
+        mydata = data; 
+        products(data);
+    }
+    else{
+        let sata = prot.concat(data);
+         mydata = sata; 
+         products(sata); 
+        console.log(sata);
+    }
+    //calling data
 }))
 .catch(()=>{
     console.error("failed to load api");
