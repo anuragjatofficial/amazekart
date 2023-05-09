@@ -28,13 +28,12 @@ myform.addEventListener("submit",(event)=>{
                        </div>
                     </div>`;
         }
+        if (details[0]=="admin@amazecart.in" && details[details.length-1]=="Noida@123"){
+            window.location.replace("./admin.html");
+        }
         for(let i = 0;i<cxdata.length;i++){
             // console.log(details[0]=="admin@amazecart.in");
-            if (details[0]=="admin@amazecart.in" && details[details.length-1]=="Noida@123"){
-                window.location.replace("./admin.html");
-                break;
-            }
-            else if((details[0]===cxdata[i].cxemail || details[i]==cxdata[i].cxnumber) && details[details.length-1]===cxdata[i].cxpassword){
+            if((details[0]===cxdata[i].cxemail || details[i]==cxdata[i].cxnumber) &&    details[details.length-1]===cxdata[i].cxpassword){
                 hello = cxdata[i].cxname;
                 localStorage.setItem("name",hello);
                 alert("succesfully logeed in");
@@ -53,30 +52,3 @@ myform.addEventListener("submit",(event)=>{
         }
     }
 });
-// (2) ['anurag.1101140@gmail.com', 'fghffth']
-// 0
-// : 
-// "anurag.1101140@gmail.com"
-// 1
-// : 
-// "fghffth"
-// length
-// : 
-// 2
-// [[Prototype]]
-// : 
-// Array(0)
-
-// console.log(cxdata);
-// cxemail
-// : 
-// "anurag.1101140@gmail.com"
-// cxname
-// : 
-// "Anurag Choudhary"
-// cxnumber
-// : 
-// "9874561230"
-// cxpassword
-// : 
-// "hjj@afdff"
