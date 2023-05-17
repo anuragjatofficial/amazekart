@@ -16,7 +16,7 @@ myform.addEventListener("submit",(event)=>{
     details.push(password.value);
     if(details.length === 4){
         details.pop();
-    console.log(details);
+    // console.log(details);
         if(cxdata === null){
             alert("no account found")
             wrong.innerHTML =` 
@@ -32,8 +32,8 @@ myform.addEventListener("submit",(event)=>{
             window.location.replace("./admin.html");
         }
         for(let i = 0;i<cxdata.length;i++){
-            // console.log(details[0]=="admin@amazecart.in");
-            if((details[0]===cxdata[i].cxemail || details[i]==cxdata[i].cxnumber) &&    details[details.length-1]===cxdata[i].cxpassword){
+            // console.log(details);
+            if((details[0]===cxdata[i].cxemail || details[0]==cxdata[i].cxnumber) &&    details[details.length-1]===cxdata[i].cxpassword){
                 hello = cxdata[i].cxname;
                 localStorage.setItem("name",hello);
                 alert("succesfully logeed in");
